@@ -4,11 +4,11 @@ from app.models import Service, Specification, Reservations, Doctor
 
 
 class ServiceAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'discerption')
+    list_display = ('id', 'name', 'discerption', 'icon_path')
 
 
 class SpecificationAdmin(admin.ModelAdmin):
-    list_display = ('id', 'service_id', 'name', 'discerption')
+    list_display = ('id', 'service_id', 'name', 'discerption', 'icon_path')
 
 
 class DoctorAdmin(admin.ModelAdmin):
